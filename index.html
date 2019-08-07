@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <div id="form-outer">
+        <p id="description">This is simple survey form Please fill your information</p>
+        <form method="GET" action="http://www.google.com" id="survey-form">
+            <div class="rowTab">
+                <div class="labels">
+<label id="name-label" for="name">*Name:</label>
+                </div>
+<div class="rightTab">
+<input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter Your name" required>
+</div>
+            </div>
+            <div class="rowTable">
+<div class="labels">
+<label id="email-label" for="email">*Email:</label>
+</div>
+<div class="rightTab">
+<input type="email" name="email" id="email" class="input-field" required placeholder="Enter Your Email">
+
+</div>
+            </div>
+            <div class="rowTab">
+<div class="labels">
+<label for="age" id="number-label">*Age</label>
+</div>
+<div class="rightTab">
+<input type="number" name="age" id="number" min="1" max="90" class="input-field" placeholder="Age">
+</div> 
+            </div>
+            <div class="rowTab">
+<div class="labels">
+<label for="currentPos">Which option best describes your current role?</label>
+
+</div>
+<div class="rightTab">
+    <select name="dropdown" id="dropdown" name="currentPos">
+
+        <option disable value>Select an option</option>
+        <option value="Student">Student</option>
+        <option value="Full time Job">Full time job</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+        <option value="Other">Other</option>
+    </select>
+
+</div>
+            </div>
+<div class="rowTab">
+<div class="labels">
+<label for="userRating">*How like is that you would recomanded online study to  friend?</label>
+
+</div>
+<div class="rightTab">
+<ul style="list-style: none;">  
+<li class="radio"><label> <input name="radio-buttons" value="1" type="radio" class="userRatings">Definitely</label></li>
+<li class="radio"><label> <input name="radio-buttons" value="1" type="radio" class="userRatings">Maybe</label></li>
+
+<li class="radio"><label> <input name="radio-buttons" value="1" type="radio" class="userRatings">Not sure</label></li>
+
+</ul>
+</div>
+</div>
+<div class="rowTab">
+<div class="labels">
+<label for="most-like">What do you likei in programming language</label>
+
+</div>
+<div class="rightTab">
+<select name="most-like" id="most-like" class="dropdown">
+    <option disable selected value>Select an option</option>
+    <option value="JavaScript">JavaScript</option>
+    <option value="Java">Java</option>
+    <option value="NodeJs">NodeJs</option>
+    <option value="HTML/CSS">HTML/CSS</option>
+</select>
+</div>
+</div>
+<div class="rowTab">
+    <div class="labels">
+<label for="preferences">Things that should be improved in the future</label>
+
+    </div>
+    <div class="rightTab">
+
+   
+    <ul id="preferences" style="list-style: none;">
+<li class="checkbox"><label><input type="checkbox" name="prefer" value="1" class="userRatings">Front-End Projects</label></li>
+<li class="checkbox"><label><input type="checkbox" name="prefer" value="1" class="userRatings">Back-End Developer</label></li>
+<li class="checkbox"><label><input type="checkbox" name="prefer" value="1" class="userRatings">Data Science</label></li>
+<li class="checkbox"><label><input type="checkbox" name="prefer" value="1" class="userRatings">Software Engineer</label></li>
+<li class="checkbox"><label><input type="checkbox" name="prefer" value="1" class="userRatings">Digital Marketing</label></li>
+<li class="checkbox"><label><input type="checkbox" name="prefer" value="1" class="userRatings">Freelancer</label></li>
+<li class="checkbox"><label><input type="checkbox" name="prefer" value="1" class="userRatings">Project Manager</label></li>
+<li class="checkbox"><label><input type="checkbox" name="prefer" value="1" class="userRatings">CTO</label></li>
+<li class="checkbox"><label><input type="checkbox" name="prefer" value="1" class="userRatings">Mobile App Developer</label></li>
+<li class="checkbox"><label><input type="checkbox" name="prefer" value="1" class="userRatings">Business Man</label></li>
+
+</ul>
+</div>
+</div>
+<div class="rowTab">
+<div class="labels">
+<label for="comments">Any Comments or Suggestions?</label>
+</div>
+<div class="rightTab">
+<textarea class="input-field" id="comments" style="height: 50px; resize:vertical;" name="comment" placeholder="Enter Your comment here......."></textarea>
+</div>
+</div>
+<button id="submit" type="submit">Submit</button>
+        </form>
+    </body>
+</html>
